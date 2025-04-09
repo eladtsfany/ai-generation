@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>OpenAi Prompter</title>
+</head>
+
+<body>
+
+    <nav>
+        <img src="/images/openai-logo.png" alt="Youtube Logo">
+        <h1>OpenAI Compact Prompter</h1>
+    </nav>
+
+    <div class="container">
+        <form class="meta-form">
+            <h2>Generate Meta Data</h2>
+            <label for="meta">
+                <span>Youtube Video Title</span>
+                <input type="text" name="meta">
+                <button>generate</button>
+            </label>
+        </form>
+
+        <div class="description">
+            <p>Your Video Description...</p>
+        </div>
+
+        <form class="image-form">
+            <h2>Generate Image</h2>
+            <label for="desc">
+                <span>Describe the image</span>
+                <input type="text" name="desc">
+                <button>generate</button>
+            </label>
+        </form>
+
+        <div class="thumbnail">
+            <img src="https://place-hold.it/512x512" alt="thumbnail">
+        </div>
+    </div>
+
+    <script src="/index.js"></script>
+</body>
+
+</html>

@@ -12,12 +12,13 @@ metaForm.addEventListener('submit', async (e) => {
 
     const res = await fetch('/openai/meta', {
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ prompt: metaForm.meta.value }),
+        body: JSON.stringify({ prompt: metaForm.metaText.value }),
         method: 'POST'
     });
 
     const data = await res.json();
-    console.log(data);
+    // console.log(data);
+    console.log(data + '\n Data.output: \n' + data.output);
 
     description.textContent = data.output;
 });

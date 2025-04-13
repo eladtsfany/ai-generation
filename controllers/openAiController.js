@@ -7,7 +7,6 @@ const generateMeta = async (req, res) => {
             model: 'gpt-4o-mini',
             input: user_prompt,
             instructions: `Generate a meta description for a YouTube video titled ${user_prompt}`,
-            stream: true,
             max_output_tokens: 200,
         });
         res.status(200).json({
